@@ -1,0 +1,145 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 20px;
+  background-color: #eaebec;
+  font-family: "Open Sans", sans-serif;
+}
+.hero {
+  position: relative;
+  height: 500px;
+  box-sizing: border-box;
+  background-color: white;
+  overflow: hidden;
+  transition: box-shadow 0.3 ease;
+}
+.img {
+  height: 80%;
+  width: auto;
+  z-index: 0;
+}
+.on-img {
+  display: none;
+}
+.hero:hover .on-img {
+  display: contents;
+}
+.img-parent {
+  position: relative;
+}
+.hero:hover {
+  box-shadow: 5px 15px 30px -15px rgba(0, 0, 0, 0.5);
+}
+.color-on-img {
+  position: absolute;
+  background-color: #48cfad;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  opacity: 0.6;
+}
+button:hover {
+  background-color: white;
+  color: #48cfad;
+  transition: background-color 0.3s, 0.3s ease;
+}
+button {
+  position: absolute;
+  top: 120px;
+  z-index: 2;
+  left: 95px;
+  background-color: transparent;
+  height: 40px;
+  width: 140px;
+  border: 1px solid white;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.content {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 380px;
+  box-sizing: border-box;
+  background-color: white;
+  z-index: 3;
+  width: 100%;
+  transition: bottom 0.3s, 0.3s ease;
+  padding: 20px 0 40px 0;
+  height: fit-content;
+}
+.hero:hover > .content {
+  top: 250px;
+  transition: top 0.3s, 0.3s ease;
+}
+.h1-p {
+  margin-top: 20px;
+}
+p {
+  color: #cececf;
+}
+
+.content-heading > h3 {
+  font-weight: 500;
+  color: #48cfad;
+  margin: 0;
+  font-size: 1.4rem;
+}
+.content-heading {
+  box-sizing: border-box;
+  height: 20px;
+  width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: black;
+}
+.h1-p {
+  margin-top: 15px;
+}
+h3 {
+  font-size: 0.9rem;
+}
+.size {
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+.sizes {
+  margin: 7px 0 0 0;
+}
+.text-color {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+.color {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background-color: #48cfad;
+}
+.colors {
+  margin-top: 6px;
+  display: flex;
+  gap: 5px;
+}
+a {
+  color: #48cfad;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
